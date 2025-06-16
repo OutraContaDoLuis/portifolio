@@ -1,0 +1,35 @@
+#body--main {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.title--3 {
+  font-size: 16px;
+}
+
+.title--3__topbar {
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.title--3__topbar:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.box--space__topbar {
+  margin: 0px 16px;
+  width: 1px;
+  height: 16px;
+  background-color: black;
+}
