@@ -19,6 +19,9 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
+                <div className="box max--content">
+                    <h2>Projetos</h2>
+                </div>  
             </div>
             
         </>
