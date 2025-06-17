@@ -2,6 +2,10 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+* {
+  margin: 0;
+}
+
 .box {
   display: flex;
 }
@@ -22,22 +26,27 @@
 
 .max--content--view {
   width: 100vw;
+  height: 100vh;
 }
 
 .max--content {
   width: 100%;
 }
 
+.max--content--height {
+  height: 100%;
+}
+
 .width--content--1 {
-  width: 60%;
+  width: 70%;
 }
 
 .padding--1 {
-  padding: 0px 10%;
+  padding: 0px 15%;
 }
 
 .margin--1 {
-  margin: 0px 10%;
+  margin: 0px 15%;
 }
 
 .paragraphy {
@@ -53,4 +62,9 @@
 .align--right {
   align-self: flex-start;
   text-align: start;
+}
+
+.align--center {
+  align-self: center;
+  text-align: center;
 }

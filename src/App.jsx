@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div id="body--main" className="box box--column max--content">
-        <div id="topbar" className="box box--row width--content--1 margin--1">
+        <div id="topbar" className="box box--row width--content--1 align--center">
           <div className="box">
             <h3>LUIS H. CAMPANER</h3>
           </div>

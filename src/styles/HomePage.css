@@ -1,19 +1,113 @@
+:root {
+  --color-bg1: rgb(70, 227, 115);
+  --color-bg2: rgb(237, 221, 83);
+  --color1: 227, 70, 70;
+  --color2: 252, 176, 69;
+  --color3: 142, 91, 91;
+  --color4: 70, 183, 227;
+  --color5: 146, 227, 196;
+  --circle-size: 80%;
+  --blending: hard-light;
+}
+
+#first--box--home {
+  background: #46E373;
+  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+}
+
+#g1 {
+  position: absolute;
+  background: linear-gradient(40deg, rgb(var(--color1)), rgb(var(--color2)));
+  mix-blend-mode: var(--blending);
+
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+
+  opacity: 1;
+}
+
+.circle1 {
+  position: absolute;
+  background: linear-gradient(40deg, rgb(var(--color1)), rgb(var(--color2)));
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  top: calc(50%);
+  left: calc(50% + 200px);
+
+  animation-name: movementCircle1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+  opacity: 1;
+}
+
+.circle2 {
+  position: absolute;
+  background: linear-gradient(40deg, rgb(var(--color3)), rgb(var(--color2)));
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  top: calc(50%);
+  left: calc(50% );
+
+  opacity: 1;
+}
+
+@keyframes movementCircle1 {
+  0% {
+    left: calc(50% - 200px);
+    top: calc(50% + 50px);
+  }
+  25% {
+    left: calc(50% - 230px);
+    top: calc(50%);
+  }
+  50% {
+    right: calc(50% - 180x);
+    top: calc(50%);
+  }
+  75% {
+    right: calc(50% - 180x);
+    top: calc(50% + 10px);
+  }
+  100% {
+    left: calc(50% - 200px);
+    top: calc(50% + 50px);
+  }
+}
+
+#first--box__h1 {
+  color: white;
+  margin-bottom: 8px;
+}
+
+#first--box__p {
+  color: white;
+  margin-bottom: 16px;
+}
+
 .home__button {
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-size: 16px;
-  border: 2px solid #46E373;
+  border: 2px solid white;
   border-radius: 32px;
   background-color: transparent;
   font-weight: 600;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #46E373;
+  color: white;
   transition: 0.3s ease;
   margin-right: 16px;
 }
 
 .home__button:hover {
-    cursor: pointer;
-    border: 2px solid transparent;
-    background-color: #46E373;
-    color: white;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: white;
+  color: #46E373;
 }
