@@ -10,10 +10,10 @@ function App() {
 
   return (
     <>
-      <div id="body--main" className="box box--column max--content">
+      <div id="body--main" className="box box--column">
         <div id="topbar" className="box box--row width--content--1 align--center">
           <div className="box">
-            <h3>LUIS H. CAMPANER</h3>
+            <h3 id="topbar--name">LUIS H. CAMPANER</h3>
           </div>
           <div className="box box--row">
             <h3 className="title--3 title--3__topbar">Inicio</h3>

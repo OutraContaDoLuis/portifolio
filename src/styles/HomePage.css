@@ -5,14 +5,16 @@
   --color2: 252, 176, 69;
   --color3: 142, 91, 91;
   --color4: 70, 183, 227;
-  --color5: 146, 227, 196;
+  --color5: 57, 47, 47;
   --circle-size: 80%;
   --blending: hard-light;
 }
 
 #first--box--home {
   background: #46E373;
-  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  background: linear-gradient(45deg, rgba(70, 227, 115, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+  z-index: 0;
 }
 
 #g1 {
@@ -25,11 +27,14 @@
   border-radius: 50%;
 
   opacity: 1;
+
+  z-index: 1;
 }
 
 .circle1 {
   position: absolute;
-  background: linear-gradient(40deg, rgb(var(--color1)), rgb(var(--color2)));
+  background: #E34646;
+  background: linear-gradient(40deg, rgba(227, 70, 70, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
   width: 200px;
   height: 200px;
@@ -39,10 +44,12 @@
   left: calc(50% + 200px);
 
   animation-name: movementCircle1;
-  animation-duration: 60s;
+  animation-duration: 120s;
   animation-iteration-count: infinite;
 
-  opacity: 0.8;
+  opacity: 0.7;
+
+  z-index: 1;
 }
 
 .circle2 {
@@ -57,11 +64,35 @@
   left: calc(50% );
 
   animation-name: movementCircle2;
-  animation-duration: 70s;
+  animation-duration: 120s;
   animation-iteration-count: infinite;
 
   opacity: 0.8;
+
+  z-index: 1;
 }
+
+.circle3 {
+  position: absolute;
+  background: #392F2F;
+  background: linear-gradient(40deg, rgba(57, 47, 47, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+
+  top: calc(50%);
+  left: calc(50% );
+
+  animation-name: movementCircle3;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+
+  opacity: 0.7;
+
+  z-index: 1;
+}
+
 
 @keyframes movementCircle1 {
   0% {
@@ -109,14 +140,43 @@
   }
 }
 
+@keyframes movementCircle3 {
+  0% {
+    left: 10px;
+    top: calc(100% - 140px);
+  }
+  25% {
+    left: calc(100% - 140px);
+    top: 10px;
+  }
+  50% {
+    right: calc(50% + 160px);
+    top: calc(100% - 140px);
+  }
+  75% {
+    left: calc(50% - 180px);
+    top: calc(50% + 10px);
+  }
+  100% {
+    left: 10px;
+    top: calc(100% - 140px);
+  }
+}
+
 #first--box__h1 {
+  font-size: 48px;
+
   color: white;
   margin-bottom: 8px;
+
+  z-index: 2;
 }
 
 #first--box__p {
   color: white;
   margin-bottom: 16px;
+
+  z-index: 2;
 }
 
 .home__button {
@@ -130,6 +190,8 @@
   color: white;
   transition: 0.3s ease;
   margin-right: 16px;
+
+  z-index: 2;
 }
 
 .home__button:hover {
@@ -137,4 +199,8 @@
   border: 2px solid transparent;
   background-color: white;
   color: #46E373;
+
+  z-index: 2;
 }
+
+

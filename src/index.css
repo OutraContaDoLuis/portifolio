@@ -1,3 +1,5 @@
+@layer layer1, layer2, topbar;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -24,12 +26,15 @@
   justify-content: space-between;
 }
 
-.max--content--view {
+.max--content--view--width {
   width: 100vw;
+}
+
+.max--content--view--height {
   height: 100vh;
 }
 
-.max--content {
+.max--content--width {
   width: 100%;
 }
 
