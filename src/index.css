@@ -73,3 +73,7 @@
   align-self: center;
   text-align: center;
 }
+
+.items--center {
+  align-items: center;
+}

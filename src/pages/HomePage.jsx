@@ -5,8 +5,6 @@ import { TbBrandKotlin } from "react-icons/tb";
 import { SiMariadbfoundation } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
 import { FaDocker } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import { GiTransparentSlime } from 'react-icons/gi';
 
 import siteSanJoseph from '../assets/home/site-sanjoseph.png';
 
@@ -87,7 +85,29 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <div className="box max--content--width max--content--view--height items--center">
+                    <div className="box box--column margin--1 max--content--width">
+                        <h1 className="title--1 home__h1 align--center home--about--element--margin-bottom">Entre em contato</h1>
+                        <div className="box box--column max--content--width">
+                            <p className="contact--home__p">Gostou do meu trabalho e quer fazer negócio? Entre em contato comigo pelo email: luis.henri.campaner@gmail.com</p>
+                            <p className="contact--home__p">Ou então, você pode acessar minhas redes sociais abaixo: </p>
+                            <div className="box box--row align--center">
+                                <button className="contact--home__button" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>
+                                    <i class="bi bi-github"></i>
+                                </button>
+                                <button className="contact--home__button" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                                <button className="contact--home__button" onClick={() => window.open('https://www.instagram.com/luis_henr09/')}>
+                                    <i class="bi bi-instagram"></i>
+                                </button>
+                                <button className="contact--home__button" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>
+                                    <i class="bi bi-envelope-at"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </>
