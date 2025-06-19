@@ -1,0 +1,70 @@
+.margin--bottom--card--project {
+  margin-bottom: 16px;
+}
+
+.margin--right--card--project {
+  margin-right: 32px;
+}
+
+.margin--left--card--project {
+  margin-left: 32px;
+}
+
+#card--show--project > h2 {
+  font-weight: 600;
+  font-size: 24px;
+
+  color: #46E373;
+}
+
+#card--show--project > p {
+  font-size: 20px;
+}
+
+#card--project__img {
+  width: 100%;
+  height: 150px;
+}
+
+#card--project__img > img {
+  top: 0;
+
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card--project {
+  padding: 32px;
+
+  width: 40%;
+  height: fit-content;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.card--project__button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 2px solid #46E373;
+  border-radius: 32px;
+  background-color: transparent;
+  font-weight: 600;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #46E373;
+  transition: 0.3s ease;
+
+  margin-right: 8px;
+}
+
+.card--project__button:hover {
+  cursor: pointer;
+
+  color: white;
+  border: 2px solid #46E373;
+  background-color: #46E373;
+}
+
+.margin--icon_button {
+  margin-right: 8px;
+}

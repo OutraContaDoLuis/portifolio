@@ -1,5 +1,17 @@
 import '../styles/HomePage.css';
 
+import { DiJsBadge, DiReact, DiPython, DiDatabase, DiHtml5, DiCss3, DiPostgresql } from "react-icons/di";
+import { TbBrandKotlin } from "react-icons/tb";
+import { SiMariadbfoundation } from "react-icons/si";
+import { RiVuejsFill } from "react-icons/ri";
+import { FaDocker } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import { GiTransparentSlime } from 'react-icons/gi';
+
+import siteSanJoseph from '../assets/home/site-sanjoseph.png';
+
+import ShowProjectCardHome from '../componentes/home/ShowProjectCardHome';
+
 function HomePage() {
 
     return(
@@ -12,8 +24,8 @@ function HomePage() {
                     <div className="circle4"></div>
                     <div className="box box--row margin--1">
                         <div className="box box--column">
-                            <h1 id="first--box__h1" className="title--1 align--right">Torne seu sonho uma realidade!</h1>
-                            <p id="first--box__p" className="paragraphy align--right">Desenvolvedor FullStack preparado para colocar o seu projeto em acao.</p>
+                            <h1 id="first--box__h1" className="title--1 align--right">Torne o seu sonho real!</h1>
+                            <p id="first--box__p" className="paragraphy align--right">Aqui, você pode ter certeza que a sua ideia sai do papel e transforma o mundo.</p>
                             <div className="box box--row align--right">
                                 <button className="home__button">Saiba mais</button>
                                 <button className="home__button">Contato</button>
@@ -21,9 +33,61 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h2>Projetos</h2>
+                <div id="second--box--home" className="box max--content--view--height">
+                    <div className="box box--column margin--1">
+                        <h1 className="title--1 home__h1 home--about--element--margin-bottom">Sobre mim</h1>
+                        <p className="paragraphy align--center home--about--element--margin-bottom">Oi, meu nome e Luis Henrique Campaner e atualmente trabalho como desenvolvedor FullStack. Domino as tecnologias C#, Kotlin, Python, HTML 5, CSS, Vue, React JS, Flutter, SQL, MariaDB, Postgresql e Github.</p>
+                        <div className="box box--row">
+                            <div className="box home--icon__div">
+                                <DiJsBadge className="icons" />
+                            </div>
+                            <div className="box home--icon__div">
+                                <DiHtml5 className="icons" />
+                            </div>
+                            <div className="box home--icon__div">
+                                <DiCss3 />
+                            </div>
+                            <div className="box home--icon__div">
+                                <DiReact />
+                            </div>
+                            <div className="box home--icon__div">
+                                <DiPython />
+                            </div>
+                            <div className="box home--icon__div">
+                                <DiDatabase />
+                            </div>
+                            <div className="box home--icon__div">
+                                <TbBrandKotlin />
+                            </div>
+                            <div className="box home--icon__div">
+                                <SiMariadbfoundation />
+                            </div>
+                            <div className="box home--icon__div">
+                                <DiPostgresql />
+                            </div>
+                            <div className="box home--icon__div">
+                                <RiVuejsFill />
+                            </div>
+                            <div className="box home--icon__div">
+                                <FaDocker />
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div id="third--box--home" className="box max--content--width max--content--view--height">
+                    <div className="box box--column margin--1 max--content--width">
+                        <h1 className="title--1 home__h1 align--right home--about--element--margin-bottom">Projetos</h1>
+                        <div className="box box--row max--content--width between-content">
+                            <ShowProjectCardHome 
+                                titleCard={ 'Site SanJoseph' } 
+                                imgCard={ siteSanJoseph } 
+                                apresentationText={ 'Site de apresentação da empresa SanJoseph desenvolvido em React.js' }
+                                linkGithub={ 'https://github.com/OutraContaDoLuis/SanJosephWebSite' }
+                                linkProduction={ 'https://sanjosephwebsite.netlify.app/' }/>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
             </div>
             
         </>

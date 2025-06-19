@@ -54,7 +54,8 @@
 
 .circle2 {
   position: absolute;
-  background: linear-gradient(40deg, rgb(var(--color3)), rgb(var(--color2)));
+  background: #8E5B5B;
+  background: linear-gradient(90deg, rgba(142, 91, 91, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 
   width: 150px;
   height: 150px;
@@ -173,6 +174,8 @@
 }
 
 #first--box__p {
+  font-size: 24px;
+
   color: white;
   margin-bottom: 16px;
 
@@ -180,8 +183,8 @@
 }
 
 .home__button {
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 16px 32px;
+  font-size: 20px;
   border: 2px solid white;
   border-radius: 32px;
   background-color: transparent;
@@ -203,4 +206,43 @@
   z-index: 2;
 }
 
+#second--box--home {
+  align-items: center;
+}
 
+.home__h1 {
+  font-size: 42px;
+
+  color: #46E373;
+}
+
+#second--box__h1 {
+  font-size: 42px;
+
+  color: #46E373;
+}
+
+.home--about--element--margin-bottom {
+  margin-bottom: 32px;
+}
+
+.home--icon__div {
+  font-size: 64px;
+  margin: 0px 8px;
+
+  color: #46E373;
+  background: transparent;
+}
+
+.icons {
+  stroke: blue;
+  stroke-width: 0;
+}
+
+@keyframes identifier {
+  
+}
+
+#third--box--home {
+  align-items: center;
+}
