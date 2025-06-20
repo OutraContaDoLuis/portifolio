@@ -47,3 +47,40 @@
   height: 16px;
   background-color: black;
 }
+
+#footer{
+  height: 40vh;
+}
+
+.footer--buttons--column {
+  margin-right: 32px;
+}
+
+#footer--row--links {
+  height: fit-content;
+}
+
+.footer--buttons--column > p {
+  font-size: 16px;
+
+  transition: 0.3s ease;
+}
+
+.footer--buttons--column > p:hover {
+  cursor: pointer;
+
+  color: #46E373;
+}
+
+.footer__h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #46E373;
+
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+#footer--copyright__p {
+  margin-bottom: 8px;
+}

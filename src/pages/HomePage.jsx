@@ -22,9 +22,9 @@ function HomePage() {
                     <div className="circle4"></div>
                     <div className="box box--row margin--1">
                         <div className="box box--column">
-                            <h1 id="first--box__h1" className="title--1 align--right">Torne o seu sonho real!</h1>
-                            <p id="first--box__p" className="paragraphy align--right">Aqui, você pode ter certeza que a sua ideia sai do papel e transforma o mundo.</p>
-                            <div className="box box--row align--right">
+                            <h1 id="first--box__h1" className="title--1 align--left">Torne o seu sonho real!</h1>
+                            <p id="first--box__p" className="paragraphy align--left">Aqui, você pode ter certeza que a sua ideia sai do papel e transforma o mundo.</p>
+                            <div className="box box--row align--left">
                                 <button className="home__button">Saiba mais</button>
                                 <button className="home__button">Contato</button>
                             </div>
@@ -74,7 +74,7 @@ function HomePage() {
                 </div>
                 <div id="third--box--home" className="box max--content--width max--content--view--height">
                     <div className="box box--column margin--1 max--content--width">
-                        <h1 className="title--1 home__h1 align--right home--about--element--margin-bottom">Projetos</h1>
+                        <h1 className="title--1 home__h1 align--left home--about--element--margin-bottom">Projetos</h1>
                         <div className="box box--row max--content--width between-content">
                             <ShowProjectCardHome 
                                 titleCard={ 'Site SanJoseph' } 
