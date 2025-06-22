@@ -1,0 +1,19 @@
+#first--box--about {
+    align-items: center;
+}
+
+
+#second--box--about {
+    align-items: center;
+}
+
+.about__h1 {
+    font-weight: 600;
+    font-size: 42px;
+
+    color: #46E373;
+}
+
+.about__p {
+    font-size: 20px;
+}

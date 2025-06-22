@@ -11,7 +11,7 @@ function App() {
   const navigate = useNavigate();
 
   function changePageFunction(route) {
-    return navigate(route)
+    return navigate(route, { replace: true })
   }
 
   const date = new Date()
@@ -25,9 +25,9 @@ function App() {
             <h3 id="topbar--name">LUIS H. CAMPANER</h3>
           </div>
           <div className="box box--row">
-            <h3 className="title--3 title--3__topbar">Inicio</h3>
+            <h3 className="title--3 title--3__topbar" onClick={() => changePageFunction("/")}>Inicio</h3>
             <div className="box box--space__topbar"></div>
-            <h3 className="title--3 title--3__topbar">Sobre</h3>
+            <h3 className="title--3 title--3__topbar" onClick={() => changePageFunction("about")}>Sobre</h3>
             <div className="box box--space__topbar"></div>
             <h3 className="title--3 title--3__topbar">Projetos</h3>
             <div className="box box--space__topbar"></div>
