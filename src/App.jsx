@@ -31,7 +31,7 @@ function App() {
             <div className="box box--space__topbar"></div>
             <h3 className="title--3 title--3__topbar" onClick={() => changePageFunction("projects")}>Projetos</h3>
             <div className="box box--space__topbar"></div>
-            <h3 className="title--3 title--3__topbar">Contato</h3>
+            <h3 className="title--3 title--3__topbar" onClick={() => changePageFunction("contact")}>Contato</h3>
           </div>
         </div>
         <Outlet />
