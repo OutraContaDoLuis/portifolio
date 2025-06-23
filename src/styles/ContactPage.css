@@ -1,5 +1,8 @@
 #first--box--contact {
     align-self: center;
+
+    margin-top: 128px;
+    margin-bottom: 128px;
 }
 
 .contact__h1 {
@@ -11,15 +14,20 @@
 
 .contact__p {
     font-size: 20px;
+    margin: 8px;
 }
 
 .contact__input {
     padding: 12px 24px;
     font-size: 20px;
-
+    border: 1px solid;
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-    margin: 8px 0px;
+    margin-top: 8px;
+}
+
+.contact--invalid__input__textarea {
+    border: 1px solid rgb(253, 66, 66);
 }
 
 .contact__textarea {
@@ -30,12 +38,20 @@
 
     height: 128px;
 
-    margin: 8px 0px;
+    margin-top: 8px;
+}
+
+.invalid__span {
+    color: rgb(253, 66, 66);
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 4px;
+    margin-bottom: 8px;
 }
 
 .contact__button {
     padding: 12px 24px;
-    margin: 8px 0px;
+    margin-top: 8px;
 
     background-color: transparent;
     color: #46E373;
@@ -55,12 +71,12 @@
 }
 
 .contact--2__button {
-    padding: 16px;
+    padding: 20px;
     margin: 8px;
 
-    border-radius: 32px;
+    border-radius: 42px;
     border: 2px solid #46E373;
-    font-size: 20px;
+    font-size: 24px;
 
     background-color: transparent;
     color: #46E373;
