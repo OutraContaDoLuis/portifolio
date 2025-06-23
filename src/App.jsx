@@ -29,7 +29,7 @@ function App() {
             <div className="box box--space__topbar"></div>
             <h3 className="title--3 title--3__topbar" onClick={() => changePageFunction("about")}>Sobre</h3>
             <div className="box box--space__topbar"></div>
-            <h3 className="title--3 title--3__topbar">Projetos</h3>
+            <h3 className="title--3 title--3__topbar" onClick={() => changePageFunction("projects")}>Projetos</h3>
             <div className="box box--space__topbar"></div>
             <h3 className="title--3 title--3__topbar">Contato</h3>
           </div>
