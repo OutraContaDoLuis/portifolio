@@ -10,7 +10,19 @@ import siteSanJoseph from '../assets/home/site-sanjoseph.png';
 
 import ShowProjectCardHome from '../componentes/home/ShowProjectCardHome';
 
+import { useNavigate } from 'react-router';
+
 function HomePage() {
+
+    const navigate = useNavigate();
+
+    function changePageFunction(route) {
+        return navigate(route, { replace: true })
+    }
+
+    function openEmail() {
+        window.open('mailto:luis.henri.campaner@gmail.com', '_blank')
+    }
 
     return(
         <>
@@ -25,8 +37,8 @@ function HomePage() {
                             <h1 id="first--box__h1" className="title--1 align--left">Torne o seu sonho real!</h1>
                             <p id="first--box__p" className="paragraphy align--left">Aqui, você pode ter certeza que a sua ideia sai do papel e transforma o mundo.</p>
                             <div className="box box--row align--left">
-                                <button className="home__button">Saiba mais</button>
-                                <button className="home__button">Contato</button>
+                                <button className="home__button" onClick={() => changePageFunction('about')}>Saiba mais</button>
+                                <button className="home__button" onClick={() => changePageFunction('contact')}>Contato</button>
                             </div>
                         </div>
                     </div>
@@ -89,19 +101,19 @@ function HomePage() {
                     <div className="box box--column margin--1 max--content--width">
                         <h1 className="title--1 home__h1 align--center home--about--element--margin-bottom">Entre em contato</h1>
                         <div className="box box--column max--content--width">
-                            <p className="contact--home__p">Gostou do meu trabalho e quer fazer negócio? Entre em contato comigo pelo email: luis.henri.campaner@gmail.com</p>
+                            <p className="contact--home__p">Gostou do meu trabalho e quer fazer negócio? Entre em contato comigo pelo email: <span id="link--email__span" onClick={() => openEmail()}>luis.henri.campaner@gmail.com</span></p>
                             <p className="contact--home__p">Ou então, você pode acessar minhas redes sociais abaixo: </p>
                             <div className="box box--row align--center">
                                 <button className="contact--home__button" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>
                                     <i class="bi bi-github"></i>
                                 </button>
-                                <button className="contact--home__button" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>
+                                <button className="contact--home__button" onClick={() => window.open('https://www.linkedin.com/in/luis-henrique-campaner-392646369/')}>
                                     <i class="bi bi-linkedin"></i>
                                 </button>
                                 <button className="contact--home__button" onClick={() => window.open('https://www.instagram.com/luis_henr09/')}>
                                     <i class="bi bi-instagram"></i>
                                 </button>
-                                <button className="contact--home__button" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>
+                                <button className="contact--home__button" onClick={() => openEmail()}>
                                     <i class="bi bi-envelope-at"></i>
                                 </button>
                             </div>

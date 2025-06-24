@@ -21,6 +21,10 @@
   z-index: 3;
 }
 
+#topbar:hover {
+  cursor: pointer;
+}
+
 #topbar--name {
   background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
   -webkit-background-clip: text;
@@ -81,5 +85,9 @@
 }
 
 #footer--copyright__p {
+  margin-bottom: 8px;
+}
+
+.footer--link__p {
   margin-bottom: 8px;
 }
