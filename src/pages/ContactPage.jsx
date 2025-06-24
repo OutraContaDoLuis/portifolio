@@ -2,6 +2,8 @@ import '../styles/ContactPage.css'
 
 import { useState, useEffect } from 'react';
 
+import emailjs from '@emailjs/browser';
+
 function ContactPage() {
 
     const[name, setName] = useState('');
@@ -13,6 +15,26 @@ function ContactPage() {
     const[invalidMessage, setInvalidMessage] = useState('');
 
     function confirmValidationForm() {
+
+        if (invalidName != '' || invalidEmail != '' || invalidMessage != '') {
+            return;
+        }
+
+        const templateParams = {
+            from_name: name,
+            message: message,
+            email: email
+        }
+
+        emailjs.send("service_z8wnmxp", "template_gm5dz1r", templateParams, "LgAxTdQZ8hAIXJZ74")
+        .then((resp) => {
+            console.log('Email enviado!' + resp.status)
+            setName('')
+            setEmail('')
+            setMessage('')
+        }, (err) => {
+            console.log('Error ao mandar o email')
+        })
     }
 
     useEffect(() => {
@@ -74,7 +96,8 @@ function ContactPage() {
                         onChange={(e) => {
                             let newNameValue = e.target.value.toString()
                             setName(newNameValue)
-                    }} />
+                        }} 
+                        value={name}/>
                     { invalidName != '' ? <span className="invalid__span align--left"> { invalidName } </span> : <></> }
                     <input 
                         className={
@@ -87,7 +110,8 @@ function ContactPage() {
                         onChange={(e) => {
                             let newEmailValue = e.target.value.toString()
                             setEmail(newEmailValue)
-                        }}/>
+                        }}
+                        value={email}/>
                     { invalidEmail != '' ? <span className="invalid__span align--left"> { invalidEmail } </span> : <></> }
                     <textarea 
                         className={
@@ -99,7 +123,8 @@ function ContactPage() {
                         onChange={(e) => {
                             let newMessageValue = e.target.value.toString()
                             setMessage(newMessageValue)
-                        }}></textarea>
+                        }}
+                        value={message}></textarea>
                     { invalidMessage != '' ? <span className="invalid__span align--left"> { invalidMessage } </span> : <></> }
                     <button className="contact__button" onClick={() => confirmValidationForm()}>Enviar</button>
                     <p className="contact__p">Ou entao, entre em contato comigo pelas seguintes redes sociais: </p>
