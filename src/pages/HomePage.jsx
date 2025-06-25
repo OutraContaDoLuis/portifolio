@@ -101,7 +101,7 @@ function HomePage() {
                     <div className="box box--column margin--1 max--content--width">
                         <h1 className="title--1 home__h1 align--center home--about--element--margin-bottom">Entre em contato</h1>
                         <div className="box box--column max--content--width">
-                            <p className="contact--home__p">Gostou do meu trabalho e quer fazer negócio? Entre em contato comigo pelo email: <span id="link--email__span" onClick={() => openEmail()}>luis.henri.campaner@gmail.com</span></p>
+                            <p className="contact--home__p">Gostou do meu trabalho e quer fazer negócio? Entre em contato comigo pelo email: <span className="link--email__span" onClick={() => openEmail()}>luis.henri.campaner@gmail.com</span></p>
                             <p className="contact--home__p">Ou então, você pode acessar minhas redes sociais abaixo: </p>
                             <div className="box box--row align--center">
                                 <button className="contact--home__button" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>

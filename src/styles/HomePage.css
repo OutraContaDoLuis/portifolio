@@ -251,18 +251,6 @@
   font-size: 20px;
 }
 
-#link--email__span {
-  font-size: 20px;
-  color: #46E373;
-  transition: 0.3s ease;
-}
-
-#link--email__span:hover {
-  cursor: pointer;
-  color: #5bda7f;
-  text-decoration: underline;
-}
-
 .contact--home__button {
   margin-top: 32px;
   margin-right: 8px;
