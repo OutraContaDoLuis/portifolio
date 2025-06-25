@@ -78,7 +78,7 @@ function AboutPage() {
                                     <div className="box tecnology--about--image__div">
                                         <img src={ html5Logo } alt="" />
                                     </div>
-                                    <p>Utilizo Html5 em todos os meus aplicativos Web. Gosto de ultizar a anotacao BEM para nomear meus ids e classes.</p>
+                                    <p>Utilizo HTML5 em todos os meus aplicativos Web. Gosto de utilizar a anotação BEM para nomear meus ids e classes.</p>
                                 </div>
                                 <div className="box box--column tecnology--about__div">
                                     <div className="box tecnology--about--image__div">
@@ -90,25 +90,25 @@ function AboutPage() {
                                     <div className="box tecnology--about--image__div">
                                         <img src={ jsLogo } alt="" />
                                     </div>
-                                    <p>Tenho amplo conhecimento em EntityFramework.Net, ADO.Net e em toda parte de API Rest.</p>
+                                    <p>Tenho experiência no javascript tanto em frontend (eventos do usuário) quanto backend (node.js).</p>
                                 </div>
                                 <div className="box box--column tecnology--about__div">
                                     <div className="box tecnology--about--image__div">
                                         <img src={ reactjsLogo } alt="" />
                                     </div>
-                                    <p>Tenho amplo conhecimento em EntityFramework.Net, ADO.Net e em toda parte de API Rest.</p>
+                                    <p>React.js é o framework principal que utilizei para construir meus aplicativos webs. Utilizo nele as tecnologias react router e axios.</p>
                                 </div>
                                 <div className="box box--column tecnology--about__div">
                                     <div className="box tecnology--about--image__div">
                                         <img src={ vuejsLogo } alt="" />
                                     </div>
-                                    <p>Tenho amplo conhecimento em EntityFramework.Net, ADO.Net e em toda parte de API Rest.</p>
+                                    <p>Vue.js é a segunda opção de framework JS que utilizo para construir meus aplicativos webs. Utilizo nele as tecnologias vue router e axios.</p>
                                 </div>
                                 <div className="box box--column tecnology--about__div">
                                     <div className="box tecnology--about--image__div">
                                         <img src={ flutterLogo } alt="" />
                                     </div>
-                                    <p>Tenho amplo conhecimento em EntityFramework.Net, ADO.Net e em toda parte de API Rest.</p>
+                                    <p>Utilizo flutter para a produção de aplicativos android e IOS. Tenho conhecimento em gerenciamento de estado e consumo de apis.</p>
                                 </div>
                             </div>
                         </div>
