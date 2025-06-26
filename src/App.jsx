@@ -37,14 +37,14 @@ function App() {
             <div id="footer--row--links" className="box align--left margin--1">
               <div className="box box--column footer--buttons--column">
                 <h2 className="footer__h2 align--left">Links</h2>
-                <p className="footer--link__p align--left">Sobre</p>
-                <p className="footer--link__p align--left">Projetos</p>
+                <p className="footer--link__p align--left" onClick={() => changePageFunction("about")}>Sobre</p>
+                <p className="footer--link__p align--left" onClick={() => changePageFunction("projects")}>Projetos</p>
               </div>
               <div className="box box--column footer--buttons--column">
                 <h2 className="footer__h2 align--left">Contato</h2>
-                <p className="footer--link__p align--left">Linkedin</p>
-                <p className="footer--link__p align--left">Instagram</p>
-                <p className="footer--link__p align--left">Github</p>
+                <p className="footer--link__p align--left" onClick={() => window.open('https://www.linkedin.com/in/luis-henrique-campaner-392646369/')}>Linkedin</p>
+                <p className="footer--link__p align--left" onClick={() => window.open('https://www.instagram.com/luis_henr09/')}>Instagram</p>
+                <p className="footer--link__p align--left" onClick={() => window.open('https://github.com/OutraContaDoLuis')}>Github</p>
               </div>
             </div>
             <div className="box box--row width--content--1 between-content"> 
